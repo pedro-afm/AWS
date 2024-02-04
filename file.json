@@ -1,0 +1,53 @@
+{
+    "database": {
+      "type": "mongodb",
+      "host": "127.0.0.1",
+      "port": 27017,
+      "username": "",
+      "password": "",
+      "databaseName": "store"
+    },
+    "tables": [
+      {
+        "name": "users",
+        "columns": [
+          {
+            "name": "id",
+            "type": "string",
+            "primaryKey": true,
+            "nullable": false
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "nullable": false
+          },
+          {
+            "name": "email",
+            "type": "string",
+            "nullable": false
+          }
+        ]
+      },
+      {
+        "name": "products",
+        "columns": [
+          {
+            "name": "id",
+            "type": "string",
+            "primaryKey": true
+          },
+          {
+            "name": "name",
+            "type": "string",
+            "nullable": false
+          },
+          {
+            "name": "price",
+            "type": "float",
+            "nullable": false
+          }
+        ]
+      }
+    ]
+  }
